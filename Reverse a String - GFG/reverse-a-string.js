@@ -50,6 +50,11 @@ class Solution {
     
     reverseWord(str){
         //Your code here
-        return str.split('').reverse().join('')
+        // return str.split('').reverse().join('')
+        let newStr = '';
+        for(let i = str.length -1; i >=0; i--){
+           newStr += str[i]
+        }
+        return newStr;
     }
 }
