@@ -8,10 +8,10 @@ var wordPattern = function(pattern, s) {
     
     if(s.length != pattern.length) return false;
     
-    for(let i = 0; i < s.length; i++)
-        if(s.indexOf(s[i]) != pattern.indexOf(pattern[i]))
+    for(let i = 0; i < s.length; i++){
+        if(s.indexOf(s[i]) != pattern.indexOf(pattern[i])){
             return false;
-        
-        return true;
-    
+         } 
+    }
+    return true;
 };
